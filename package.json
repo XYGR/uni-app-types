@@ -1,0 +1,49 @@
+{
+  "name": "uni-app-types",
+  "version": "0.1.6",
+  "description": "uni-app 组件类型",
+  "keywords": [
+    "uni-app",
+    "uniapp",
+    "type"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/XYGR/uni-app-types"
+  },
+  "license": "MIT",
+  "author": {
+    "name": "YXGR",
+    "email": "yxgrwjf@qq.com"
+  },
+  "main": "index.d.ts",
+  "types": "index.d.ts",
+  "files": [
+    "index.d.ts",
+    "types"
+  ],
+  "scripts": {
+    "release": "npx release-it"
+  },
+  "dependencies": {
+    "@dcloudio/types": "3.0.15",
+    "vue3": "npm:vue@^3.2.41"
+  },
+  "engines": {
+    "node": ">=14.16"
+  },
+  "release-it": {
+    "git": {
+      "commitMessage": "chore(release): uni-app-types@v${version}",
+      "tagName": "uni-app-types@v${version}"
+    },
+    "hooks": {
+      "before:init": "pnpm install",
+      "after:bump": "cp -af README.md ../docs/docs/typescript/uni-app-types.md && pnpm publish --no-git-checks"
+    },
+    "npm": {
+      "publish": false,
+      "timeout": 30
+    }
+  }
+}
