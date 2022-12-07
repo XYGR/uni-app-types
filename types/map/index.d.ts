@@ -299,47 +299,47 @@ export interface MapPolyline {
    * @desc 十六进制颜色
    * @desc colorList 不存在时有效
    */
-  color: string;
+  color?: string;
   /**
    * @desc 线的宽度
    */
-  width: number;
+  width?: number;
   /**
    * @desc 是否虚线
    * @desc 默认为 false
    */
-  dottedLine: boolean;
+  dottedLine?: boolean;
   /**
    * @desc 是否带箭头
    * @desc 默认为 false
    */
-  arrowLine: boolean;
+  arrowLine?: boolean;
   /**
    * @desc 箭头图标路径
    * @desc 项目目录下的图片路径，支持相对路径和临时路径
    * @desc arrowLine 为 true 时有效
    */
-  arrowIconPath: string;
+  arrowIconPath?: string;
   /**
    * @desc 线的边框颜色
    */
-  borderColor: string;
+  borderColor?: string;
   /**
    * @desc 线的宽度
    */
-  borderWidth: number;
+  borderWidth?: number;
   /**
    * @desc 彩虹线
    * @desc 存在时忽略 color
    */
-  colorList: string[];
+  colorList?: string[];
   /**
    * @desc 压盖关系
    * @desc abovelabels 显示在所有 POI 之上
    * @desc abovebuildings 显示在楼块之上 POI 之下
    * @desc aboveroads 显示在道路之上楼块之下
    */
-  level: MapLevel;
+  level?: MapLevel;
 }
 
 /**
@@ -353,26 +353,26 @@ export interface MapPolygon {
   /**
    * @desc 描边宽度
    */
-  strokeWidth: number;
+  strokeWidth?: number;
   /**
    * @desc 十六进制描边颜色
    */
-  strokeColor: string;
+  strokeColor?: string;
   /**
    * @desc 十六进制填充颜色
    */
-  fillColor: string;
+  fillColor?: string;
   /**
    * @desc z 轴数值
    */
-  zIndex: number;
+  zIndex?: number;
   /**
    * @desc 压盖关系
    * @desc abovelabels 显示在所有 POI 之上
    * @desc abovebuildings 显示在楼块之上 POI 之下
    * @desc aboveroads 显示在道路之上楼块之下
    */
-  level: MapLevel;
+  level?: MapLevel;
 }
 
 /**

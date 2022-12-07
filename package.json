@@ -1,6 +1,6 @@
 {
-  "name": "uni-app-types",
-  "version": "0.1.6",
+  "name": "@yxgr/uni-app-types",
+  "version": "0.0.2",
   "description": "uni-app 组件类型",
   "keywords": [
     "uni-app",
@@ -42,8 +42,12 @@
       "after:bump": "cp -af README.md ../docs/docs/typescript/uni-app-types.md && pnpm publish --no-git-checks"
     },
     "npm": {
-      "publish": false,
+      "publish": true,
       "timeout": 30
+    },
+    "publishConfig": {
+      "registry": "https://registry.npmmirror.com/",
+      "access": "public"
     }
   }
 }
